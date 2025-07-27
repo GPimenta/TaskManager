@@ -34,7 +34,7 @@ def main():
             try:
                 task_id = int(input("Enter task ID to complete: "))
                 controller.complete_task(task_id)
-                print("✅ Task marked as complete.")
+                print("Task marked as complete.")
             except ValueError:
                 print("Invalid ID.")
         elif choice == "4":
@@ -43,9 +43,9 @@ def main():
                 controller.delete_task(task_id)
                 print("🗑️ Task deleted.")
             except ValueError:
-                print("❌ Invalid ID.")
+                print("Invalid ID.")
         elif choice == "5":
-            print("👋 Goodbye!")
+            print("Goodbye!")
             break
         else:
             print("Invalid option. Try again.")
